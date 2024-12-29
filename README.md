@@ -21,12 +21,18 @@ For more details on the problem statement, refer to the [Project Question Paper 
 | **FPGA (Field-Programmable Gate Array)** | FPGA Board: XEN 10<br>Handles SPI Master implementation and ADC/DAC communication.       | - SPI Clock Frequency: 1 MHz<br>- Registers for Data Storage: 10-bit width |
 | **LCD Display**              | Displays intermediate values, such as voltage calculated from ADC data.                             | - Display Units: Voltage (scaled using 3.3/1024) |
 
-## Task Workflow 
-### Task 1 
-Implement SPI communication between Master and Slave.
+## **Task Workflow** 
+### **Task 1** 
+Implement SPI communication between Master and Slave.<br>
 Files:
 - [SPI Master VHDL Code](https://github.com/Foraum/need-to-think/blob/main/Task%201/part1_master.vhd)
 - [SPI Slave VHDL Code](https://github.com/Foraum/need-to-think/blob/main/Task%201/part1_slave.vhd)
 - [Toplevel VHDL Code](https://github.com/Foraum/need-to-think/blob/main/Task%201/Toplevel.vhd)
-- [Testbench VHDL Code] 
+- [Testbench VHDL Code](https://github.com/Foraum/need-to-think/blob/main/Task%201/Testbench.vhd)
 
+### **Task 2: ADC to DAC with LCD Display**
+In this task, we interface the MCP3008 ADC, MCP4921 DAC, and an LCD display with an FPGA to convert and visualize analog voltage values. The potentiometer (0-3.3V) provides the analog input to the MCP3008, which converts it into a 10-bit digital value relative to a 3.3V reference. The FPGA, acting as the SPI master, receives the ADC output via SPI communication, and the digital value is transferred to the MCP4921 DAC, which converts it back to analog. The FPGA also calculates the voltage from the ADC’s digital output and displays it on the LCD.<br>
+Files:
+- [ADC Master VHDL Code](
+- [Toplevel VHDL Code]
+- [Testbench VHDL Code]
