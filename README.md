@@ -25,8 +25,8 @@ For more details on the problem statement, refer to the [Project Question Paper 
 ### Task 1 
 Implement SPI communication between Master and Slave.
 Files:
-- [SPI Master VHDL Code](
-- [SPI Slave VHDL Code]
-- [Toplevel VHDL Code]
+- [SPI Master VHDL Code](https://github.com/Foraum/need-to-think/blob/main/Task%201/part1_master.vhd)
+- [SPI Slave VHDL Code](part1_slave.vhd)
+- [Toplevel VHDL Code](
 - [Testbench VHDL Code] 
 
