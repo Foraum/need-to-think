@@ -27,3 +27,9 @@ For more details on the problem statement, refer to the [Project Question Paper 
 3. **DAC Integration**
    - DAC was already on  **Xilinx Spartan-10 (XEN 10)** FPGA board.
    - Analog output verified using a **Digital Storage Oscilloscope (DSO)**.
+
+## Repository Structure 
+The repository is organized as follows:
+| File/Folder         | Description                                                  |
+|---------------------|--------------------------------------------------------------|
+| 
