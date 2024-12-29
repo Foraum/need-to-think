@@ -1,6 +1,6 @@
 # FPGA-Driven Sine Wave Regeneration using ADC-DAC
-## Project Description
-This project focuses on the implementation of the Serial Peripheral Interface (SPI) protocol by interfacing an Analog-to-Digital Converter (ADC) and a Digital-to-Analog Converter (DAC) with an FPGA. The primary aim of the project is to regenerate a sine wave using these components, demonstrating the real-time conversion of analog signals to digital and back to analog.
+## **Project Description**
+This project demonstrates the design and implementation of a system capable of regenerating an analog sine wave using an FPGA and peripheral devices like ADC and DAC. The system employs the Serial Peripheral Interface (SPI) protocol to facilitate communication between the FPGA and external components.
 
 The project is divided into three distinct tasks:
 
@@ -11,25 +11,13 @@ The project is divided into three distinct tasks:
 
 For more details on the problem statement, refer to the [Project Question Paper PDF](ProjectQuestionPaper.pdf).
 
-## Features 
-1. **SPI Protocol**
-   - Implemented with a **10 MHz clock** using **Mode 0**:
-     - Clock idle state is low.
-     - Data sampled on the rising edge.
-   - Data Exchange:
-     - **Master** transmits **5** on **MOSI**.
-     - **Slave** transmits **7** on **MISO** simultaneously.
+## **Key Components**
 
-2. **ADC Integration**
-   - **MCP3008 ADC** converts **0–2V sine wave** to **10-bit digital values**.
-   - Interfaced with FPGA via SPI.
+| **Technology/Component**    | **Details**                                                                                          | **Quantitative Features**                                      |
+|------------------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| **SPI (Serial Peripheral Interface)** | A synchronous, full-duplex protocol for short-distance communication.                           | - Signals: MOSI, MISO, SCLK, CS<br>- Clock Frequency: 1 MHz<br>- Configuration: Mode 0 (CPOL = 0, CPHA = 0) |
+| **ADC (Analog-to-Digital Converter)**  | Component: MCP3008<br>Converts analog signals into 10-bit digital values.                       | - Resolution: 10 bits<br>- Input Voltage Range: 0–3.3V<br>- Sampling Rate: 200 kSPS |
+| **DAC (Digital-to-Analog Converter)**  | Component: MCP4921<br>Converts 10-bit digital data back to analog form.                        | - Resolution: 10 bits<br>- Output Voltage Range: 0–3.3V<br>- Reference Voltage: 3.3V |
+| **FPGA (Field-Programmable Gate Array)** | FPGA Board: XEN 10<br>Handles SPI Master implementation and ADC/DAC communication.       | - SPI Clock Frequency: 1 MHz<br>- Registers for Data Storage: 10-bit width |
+| **LCD Display**              | Displays intermediate values, such as voltage calculated from ADC data.                             | - Display Units: Voltage (scaled using 3.3/1024) |
 
-3. **DAC Integration**
-   - DAC was already on  **Xilinx Spartan-10 (XEN 10)** FPGA board.
-   - Analog output verified using a **Digital Storage Oscilloscope (DSO)**.
-
-## Repository Structure 
-The repository is organized as follows:
-| File/Folder         | Description                                                  |
-|---------------------|--------------------------------------------------------------|
-| 
