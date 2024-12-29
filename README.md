@@ -34,5 +34,5 @@ Files:
 In this task, we interface the MCP3008 ADC, MCP4921 DAC, and an LCD display with an FPGA to convert and visualize analog voltage values. The potentiometer (0-3.3V) provides the analog input to the MCP3008, which converts it into a 10-bit digital value relative to a 3.3V reference. The FPGA, acting as the SPI master, receives the ADC output via SPI communication, and the digital value is transferred to the MCP4921 DAC, which converts it back to analog. The FPGA also calculates the voltage from the ADC’s digital output and displays it on the LCD.<br>
 Files:
 - [ADC Master VHDL Code](https://github.com/Foraum/need-to-think/blob/main/Task%202/part2_master.vhd)
-- [Toplevel VHDL Code]
-- [Testbench VHDL Code]
+- [Toplevel VHDL Code](
+- [Testbench VHDL Code](https://github.com/Foraum/need-to-think/blob/main/Task%202/Testbench.vhd)
