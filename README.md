@@ -21,3 +21,12 @@ For more details on the problem statement, refer to the [Project Question Paper 
 | **FPGA (Field-Programmable Gate Array)** | FPGA Board: XEN 10<br>Handles SPI Master implementation and ADC/DAC communication.       | - SPI Clock Frequency: 1 MHz<br>- Registers for Data Storage: 10-bit width |
 | **LCD Display**              | Displays intermediate values, such as voltage calculated from ADC data.                             | - Display Units: Voltage (scaled using 3.3/1024) |
 
+## Task Workflow 
+### Task 1 
+Implement SPI communication between Master and Slave.
+Files:
+- [SPI Master VHDL Code](
+- [SPI Slave VHDL Code]
+- [Toplevel VHDL Code]
+- [Testbench VHDL Code] 
+
