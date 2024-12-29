@@ -51,6 +51,15 @@ Files:
 - [Testbench VHDL Code](Task%203/Testbench.vhd)
 - [Toplevel VHDL Code](Task%203/toplevel.vhd)
 
+## Software Used 
+- **ModelSim**: Tool for simulating and debugging VHDL/Verilog designs.
+- **Quartus Prime**: FPGA design software for synthesis, simulation, and programming.
+
+
+
+
+
+
 
 
 
